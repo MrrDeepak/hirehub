@@ -95,13 +95,13 @@ class _TestingState extends State<BottomBar>
         backgroundColor: Theme.of(context).primaryColor,
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.white),
-          backgroundColor: Theme.of(context).primaryColor,
-          bottom: PreferredSize(
-              preferredSize: Size.fromHeight(6.h),
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
-                child: const SearchBarWidget(color: Colors.white),
-              )),
+          backgroundColor: Colors.white,
+          // bottom: PreferredSize(
+          //     preferredSize: Size.fromHeight(6.h),
+          //     child: Padding(
+          //       padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
+          //       child: const SearchBarWidget(color: Colors.white),
+          //     )),
           actions: [
             Padding(
                 padding: EdgeInsets.only(right: 3.w),
@@ -122,6 +122,7 @@ class _TestingState extends State<BottomBar>
 
                       child: Icon(
                         Icons.notifications,
+                        color: Colors.black,
                       ),
                     ))
                
@@ -163,7 +164,7 @@ class _TestingState extends State<BottomBar>
                 activeIcon: SvgPicture.asset(
                   'assets/svg/apply.svg',
                   fit: BoxFit.contain,
-                  color: Color(0xff8C66F7),
+                  color: Color(0xff18558E),
                 ),
                 icon: SvgPicture.asset(
                   'assets/svg/apply.svg',
@@ -174,7 +175,7 @@ class _TestingState extends State<BottomBar>
             TabItem(
                 activeIcon: SvgPicture.asset('assets/svg/explore2.svg',
                 fit: BoxFit.contain,
-                    color: Color(0xff8C66F7)),
+                    color: Color(0xff18558E)),
                 icon: SvgPicture.asset(
                   'assets/svg/explore2.svg',
                   color: Color(0xff646464),
@@ -183,7 +184,7 @@ class _TestingState extends State<BottomBar>
             TabItem(
                 activeIcon: SvgPicture.asset(
                   'assets/svg/home.svg',
-                  color: Color(0xff8C66F7),
+                  color: Color(0xff18558E)
                 ),
                 icon: SvgPicture.asset(
                   'assets/svg/home.svg',
@@ -193,7 +194,7 @@ class _TestingState extends State<BottomBar>
             TabItem(
                 activeIcon: SvgPicture.asset(
                   'assets/svg/cart.svg',
-                  color: Color(0xff8C66F7),
+                  color: Color(0xff18558E)
                 ),
                 icon: SvgPicture.asset(
                   'assets/svg/cart.svg',
@@ -203,7 +204,7 @@ class _TestingState extends State<BottomBar>
             TabItem(
                 activeIcon: SvgPicture.asset(
                   'assets/svg/save.svg',
-                  color: Color(0xff8C66F7),
+                  color: Color(0xff18558E)
                 ),
                 icon: SvgPicture.asset(
                   'assets/svg/save.svg',

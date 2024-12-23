@@ -75,20 +75,12 @@ class HomePage extends StatelessWidget {
     GetQueries()
   ];
   List<Color> colorData = [
-    const Color(0xffEB7296),
-    const Color(0xff8C66F7),
-    const Color(0xffA880F0),
-    const Color(0xffD65862),
-    const Color(0xff936897),
-    const Color(0xffD65862),
-  ];
-  List svgData = [
-    'assets/svg/peopleGroup.svg',
-    'assets/svg/peopleGroup.svg',
-    'assets/svg/peopleGroup.svg',
-    'assets/svg/peopleGroup.svg',
-    'assets/svg/peopleGroup.svg',
-    'assets/svg/peopleGroup.svg',
+    const Color(0xffE4E9DE),
+    const Color(0xffE4E9DE),
+    const Color(0xffBCE7F0),
+    const Color(0xffFBE285),
+    const Color(0xffF0F4FF),
+    const Color(0xffFBF0FF),
   ];
   List pngdata = [
     'assets/images/gov.png',
@@ -118,10 +110,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-          color: Theme.of(context).primaryColor,
+          color: Colors.white,
           child: Column(
             children: [
               BreakingNewsContainer(),
@@ -258,7 +250,7 @@ class HomePage extends StatelessWidget {
                                                       // 'Government Jobs Jobs Jobs',
                                                       homeData.name ?? '',
                                                       style: const TextStyle(
-                                                          color: Colors.white,
+                                                          color: Colors.black,
                                                           fontWeight:
                                                               FontWeight.bold),
                                                     ),
@@ -268,7 +260,7 @@ class HomePage extends StatelessWidget {
                                             ),
                                             // SizedBox(height: 3,),
                                             const Divider(
-                                              color: Colors.white,
+                                              color: Colors.black,
                                             ),
                                             Row(
                                               mainAxisAlignment:
@@ -282,7 +274,7 @@ class HomePage extends StatelessWidget {
                                                         // fontSize: 15.5.sp,
                                                         fontWeight:
                                                             FontWeight.w500,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     Text(
@@ -292,7 +284,7 @@ class HomePage extends StatelessWidget {
                                                         fontSize: 17.sp,
                                                         fontWeight:
                                                             FontWeight.w600,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                   ],
@@ -308,7 +300,7 @@ class HomePage extends StatelessWidget {
                                                         // fontSize: 15.5.sp,
                                                         fontWeight:
                                                             FontWeight.w500,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     Text(
@@ -318,7 +310,7 @@ class HomePage extends StatelessWidget {
                                                         fontSize: 17.sp,
                                                         fontWeight:
                                                             FontWeight.w600,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     )
                                                   ],

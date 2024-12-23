@@ -107,7 +107,8 @@ class _NewSplashScreenState extends State<NewSplashScreen>
 
     Future.delayed(Duration(seconds: 3), () {
       setState(() {
-        _backgroundColor = Theme.of(context).primaryColor;
+        _backgroundColor = Color(0xff5B8CB9);
+        // Theme.of(context).primaryColor;
       });
     });
 
@@ -193,7 +194,7 @@ class _NewSplashScreenState extends State<NewSplashScreen>
                       child: Text(
                         'Your Trusted Partner',
                         style: TextStyle(
-                          color: Color(0xff001790),
+                          color: Colors.white,
                           fontSize: 23.sp,
                           fontWeight: FontWeight.bold,
                         ),

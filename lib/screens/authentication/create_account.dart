@@ -105,11 +105,12 @@ class _CreateAccountState extends State<CreateAccount>
                             // Use SlideTransition for the "Create an Account" text
                             SlideTransition(
                               position: _offsetAnimation,
-                              child: Image.asset(
-                                  'assets/images/createAccText.png'),
+                              child: Text('Create an Account',style: TextStyle(color: Colors.white,fontSize: 19.sp,fontWeight: FontWeight.bold),)
+                              // Image.asset(
+                              //     'assets/images/createAccText.png'),
                             ),
                             SizedBox(
-                              height: 4.2.h,
+                              height: 3.2.h,
                             ),
                             CustomTextField(
                               obscureText: false,
@@ -205,7 +206,7 @@ class _CreateAccountState extends State<CreateAccount>
                                   "Term ",
                                   style: TextStyle(
                                     fontSize: 1.7.h,
-                                    color: Colors.orange,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -220,7 +221,7 @@ class _CreateAccountState extends State<CreateAccount>
                                   "Privacy Policy ",
                                   style: TextStyle(
                                     fontSize: 1.7.h,
-                                    color: Colors.orange,
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -232,7 +233,7 @@ class _CreateAccountState extends State<CreateAccount>
                             Obx(() {
                               return createUserController.isLoading.value
                                   ? CircularProgressIndicator(
-                                      color: const Color(0xffF19157),
+                                      color: Colors.white,
                                     )
                                   : CustomWideButton(
                                       onTap: () {
@@ -261,7 +262,7 @@ class _CreateAccountState extends State<CreateAccount>
                                       },
                                       label: "Sign Up",
                                       buttonBackgroundColor:
-                                          const Color(0xffF19157),
+                                          const Color(0xff18558E),
                                     );
                             }),
 
@@ -286,7 +287,7 @@ class _CreateAccountState extends State<CreateAccount>
                                   child: Text(
                                     "Login",
                                     style: TextStyle(
-                                      color: Colors.orange,
+                                      color: Colors.white,
                                       fontSize: 1.7.h,
                                       fontWeight: FontWeight.bold,
                                     ),

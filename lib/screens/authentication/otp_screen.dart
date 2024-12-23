@@ -66,7 +66,7 @@ class _OtpScreenState extends State<OtpScreen>
     double keyboardHeight = MediaQuery.of(context).viewInsets.bottom;
 
     return Scaffold(
-      backgroundColor: const Color(0xffF19157),
+      backgroundColor: Theme.of(context).primaryColor,
       body: Form(
         key: _formKey,
         child: Stack(
@@ -114,8 +114,8 @@ class _OtpScreenState extends State<OtpScreen>
                     Container(
                       height: 70.2.h,
                       width: double.infinity,
-                      decoration: const BoxDecoration(
-                        color: Color(0xff51D7E0),
+                      decoration:  BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(30),
                           topRight: Radius.circular(30),
@@ -172,7 +172,7 @@ class _OtpScreenState extends State<OtpScreen>
                               }
                             },
                             label: "Confirm",
-                            buttonBackgroundColor: const Color(0xffF19157),
+                            buttonBackgroundColor:  Color(0xff18558E),
                           ),
                           const SizedBox(height: 5),
                           Row(
@@ -186,7 +186,7 @@ class _OtpScreenState extends State<OtpScreen>
                                 child: Text(
                                   "Resend OTP",
                                   style: TextStyle(
-                                    color: const Color(0xffF19157),
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 2.h,
                                   ),

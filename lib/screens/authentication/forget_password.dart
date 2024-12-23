@@ -124,7 +124,7 @@ class _ForgetPasswordState extends State<ForgetPassword>
                         Obx((){
                           return forgetPasswordController.isLoading.value
                             ? CircularProgressIndicator(
-                                color: const Color(0xffF19157),
+                                color: Colors.white,
                               )
                             :CustomWideButton(
                           onTap: () {
@@ -134,7 +134,7 @@ class _ForgetPasswordState extends State<ForgetPassword>
                             }
                           },
                           label: "Send OTP",
-                          buttonBackgroundColor: const Color(0xffF19157),
+                          buttonBackgroundColor: Color(0xff18558E),
                         );
                         }),
 
@@ -145,7 +145,7 @@ class _ForgetPasswordState extends State<ForgetPassword>
 
                         CustomTransparentButton(
                             label: 'Log In',
-                            backgroundColor: const Color(0xff74DFE6),
+                            backgroundColor: Colors.white,
                             nextPage: const LoginScreen())
                       ],
                     ),

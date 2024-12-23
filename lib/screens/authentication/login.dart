@@ -98,15 +98,16 @@ class _LoginScreenState extends State<LoginScreen>
                       // Use SlideTransition for the "Create an Account" text
                       SlideTransition(
                           position: _offsetAnimation,
-                          child: Image.asset('assets/images/welcomeBack.png')
-                          // Text(
-                          //   "Create an Account",
-                          //   style: TextStyle(
-                          //     fontSize: 2.7.h,
-                          //     color: Colors.blue.shade900,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
+                          child: 
+                          // Image.asset('assets/images/welcomeBack.png')
+                          Text(
+                            "Create an Account",
+                            style: TextStyle(
+                              fontSize: 2.7.h,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           ),
                       SizedBox(
                         height: 4.2.h,
@@ -142,7 +143,7 @@ class _LoginScreenState extends State<LoginScreen>
                       Obx(() {
                         return loginController.isLoading.value
                             ? CircularProgressIndicator(
-                                color: const Color(0xffF19157),
+                                color:  Colors.white,
                               )
                             : CustomWideButton(
                                 onTap: () {
@@ -157,7 +158,8 @@ class _LoginScreenState extends State<LoginScreen>
                                   }
                                 },
                                 label: "Log In",
-                                buttonBackgroundColor: const Color(0xffF19157),
+                                labelColor: Colors.white,
+                                buttonBackgroundColor: Color(0xff18558E),
                               );
                       }),
                       
@@ -180,7 +182,7 @@ class _LoginScreenState extends State<LoginScreen>
                             child: Text(
                               "Forget Password?",
                               style: TextStyle(
-                                color: const Color(0xffF19157),
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 1.9.h,
                               ),
@@ -204,7 +206,7 @@ class _LoginScreenState extends State<LoginScreen>
                       ),
                       CustomTransparentButton(
                           label: 'Sign Up',
-                          backgroundColor: const Color(0xff74DFE6),
+                          backgroundColor: Colors.white,
                           nextPage: const CreateAccount())
                     ],
                   ),

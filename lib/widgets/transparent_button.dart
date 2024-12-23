@@ -7,7 +7,8 @@ class CustomTransparentButton extends StatelessWidget {
   String label;
   Color backgroundColor;
   Widget nextPage;
-   CustomTransparentButton({required this.label,required this.backgroundColor,required this.nextPage,super.key});
+  Color labelColor;
+   CustomTransparentButton({this.labelColor = Colors.black,required this.label,required this.backgroundColor,required this.nextPage,super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class CustomTransparentButton extends StatelessWidget {
             elevation: 0,
             foregroundColor: Colors.white,
             backgroundColor: backgroundColor,
-            side: const BorderSide(width: 1.0, color: Colors.white)),
+            side: const BorderSide(width: 1.0, color: Colors.black)),
         onPressed: () {
           //Navigator.push(context, MaterialPageRoute(builder: (context) => nextPage));
           Navigator.of(context)
@@ -27,7 +28,7 @@ class CustomTransparentButton extends StatelessWidget {
         },
         child: Text(
           label,
-          style: TextStyle(fontSize: 2.2.h, fontWeight: FontWeight.bold),
+          style: TextStyle(color: labelColor,fontSize: 2.2.h, ),
         ),
       ),
     );

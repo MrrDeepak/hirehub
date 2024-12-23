@@ -47,7 +47,7 @@ class GovernmentCard extends StatelessWidget {
               child: Card(
                 margin: EdgeInsets.all(0),
                 elevation: 0,
-                color: const Color(0xffEB7296),
+                color: const Color(0xffD0E9BC),
                 shape: RoundedRectangleBorder(
                   // color: const Color(0xffEB7296),
                   borderRadius: BorderRadius.only(
@@ -84,7 +84,7 @@ class GovernmentCard extends StatelessWidget {
                               // 'Government Jobs Jobs Jobs',
                               homeData.name ?? '',
                               style: const TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontWeight: FontWeight.bold),
                             ),
                           )
@@ -93,7 +93,7 @@ class GovernmentCard extends StatelessWidget {
                     ),
                     // SizedBox(height: 3,),
                     const Divider(
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -105,7 +105,7 @@ class GovernmentCard extends StatelessWidget {
                               style: TextStyle(
                                 // fontSize: 15.5.sp,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             ),
                             Text(
@@ -113,7 +113,7 @@ class GovernmentCard extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 17.sp,
                                 fontWeight: FontWeight.w600,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             ),
                           ],
@@ -128,7 +128,7 @@ class GovernmentCard extends StatelessWidget {
                               style: TextStyle(
                                 // fontSize: 15.5.sp,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             ),
                             Text(
@@ -136,7 +136,7 @@ class GovernmentCard extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 17.sp,
                                 fontWeight: FontWeight.w600,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             )
                           ],

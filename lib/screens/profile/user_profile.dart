@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -17,10 +16,10 @@ final HomepageController homepageController = Get.put(HomepageController());
   Widget build(BuildContext context) {
     final userData = profileController.userData;
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
-        leading: BackButton(color: Colors.white,),
+        backgroundColor: Colors.white,
+        // leading: BackButton(color: Colors.white,),
       ),
       body: Obx((){
         return profileController.isLoading.value?Center(child: CircularProgressIndicator(color: Colors.white,),):

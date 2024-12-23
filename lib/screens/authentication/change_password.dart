@@ -167,7 +167,7 @@ class _ChangePasswordState extends State<ChangePassword>
                         }
                       },
                       label: "Confirm",
-                      buttonBackgroundColor: const Color(0xffF19157),
+                      buttonBackgroundColor: Color(0xff18558E),
                     );
                     }),
                     

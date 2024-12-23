@@ -10,18 +10,20 @@ class LoginSignup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Color(0xff5B8CB9),
+      // Theme.of(context).primaryColor,
       body: Column(
         children: [
           SizedBox(
-            height: 12.h,
+            height: 10.h,
           ),
-          SvgPicture.asset(
-            "assets/svg/seekformstext.svg",
-            height: 5.h,
-          ),
+          Text('HireHub',style: TextStyle(fontSize: 28.sp,color: Colors.white,fontFamily:'' ),),
+          // SvgPicture.asset(
+          //   "assets/svg/seekformstext.svg",
+          //   height: 5.h,
+          // ),
           SizedBox(
-            height: 5.h,
+            height: 3.h,
           ),
           Container(
             height: 24.5.h,
@@ -46,13 +48,16 @@ class LoginSignup extends StatelessWidget {
                   decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("assets/images/ellipseBlur.png"),
-                          fit: BoxFit.contain)),
+                          fit: BoxFit.contain)
+                          ),
                 ),
                 Center(
                   heightFactor: 2,
-                  child: SvgPicture.asset(
+                  child: 
+                  SvgPicture.asset(
                     "assets/svg/signUp.svg",
                     height: 4.h,
+                    
                   ),
                 ),
                 //SizedBox(height: 10.h,),
@@ -61,7 +66,7 @@ class LoginSignup extends StatelessWidget {
                   //heightFactor: 0.1.h,
                   child: Container(
                     decoration: const BoxDecoration(
-                      color: Color(0xffEFA465),
+                      color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30),
@@ -74,36 +79,11 @@ class LoginSignup extends StatelessWidget {
                         child: Column(
                           children: [
                             CustomTransparentButton(
+                              labelColor: Colors.white,
                               label: 'Start with phone',
-                              backgroundColor: const Color(0xffEFA465),
+                              backgroundColor:  Color(0xff18558E),
                               nextPage: const CreateAccount(),
                             ),
-                            // SizedBox(
-                            //   height: 6.h,
-                            //   width: 90.w,
-                            //   child: ElevatedButton(
-                            //     style: ElevatedButton.styleFrom(
-                            //         elevation: 0,
-                            //         foregroundColor: Colors.white,
-                            //         backgroundColor: const Color(0xffEFA465),
-                            //         side: const BorderSide(
-                            //             width: 1.0, color: Colors.white)),
-                            //     onPressed: () {
-                            //       Navigator.of(context).push(PageAnimation()
-                            //           .createAccountRoute(const CreateAccount()));
-                            //       // Navigator.push(context,
-                            //       //     MaterialPageRoute(builder: (context) {
-                            //       //   return const CreateAccount();
-                            //       // }));
-                            //     },
-                            //     child: Text(
-                            //       'Start with phone',
-                            //       style: TextStyle(
-                            //           fontSize: 2.2.h,
-                            //           fontWeight: FontWeight.bold),
-                            //     ),
-                            //   ),
-                            // ),
                             SizedBox(
                               height: 3.h,
                             ),
@@ -111,7 +91,7 @@ class LoginSignup extends StatelessWidget {
                               children: [
                                 Expanded(
                                   child: Divider(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     thickness: 1,
                                     indent: 6.h,
                                     endIndent: 2.h,
@@ -120,13 +100,13 @@ class LoginSignup extends StatelessWidget {
                                 Text(
                                   "or",
                                   style: TextStyle(
-                                      color: Colors.white, fontSize: 2.h),
+                                      color: Colors.black, fontSize: 2.h),
                                 ),
                                 Expanded(
                                     child: Divider(
                                   endIndent: 6.h,
                                   indent: 2.h,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   thickness: 1,
                                 )),
                               ],
